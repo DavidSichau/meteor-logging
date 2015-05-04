@@ -1,0 +1,13 @@
+{
+  "options": {
+    "paths": [
+      "."
+    ],
+    "exclude": ".meteor,build,tests",
+    "outdir": "./.docs"
+  },
+  "logo": "https://test.et.ethz.ch/img/Logo.png",
+  "version": "0.1.0",
+  "description": "Logging of the E.Tutorial app",
+  "name": "davidsichau:logging"
+}

@@ -11,7 +11,7 @@ rm -rf .docs || true
 branch=$(git rev-parse --abbrev-ref HEAD)
 
 yuidoc .
-rm yuidoc.json
+
 rm -rf /tmp/docs/
 mv ./.docs /tmp/docs
 #save the build files
