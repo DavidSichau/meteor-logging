@@ -1,0 +1,84 @@
+{
+    "project": {
+        "logo": "https://test.et.ethz.ch/img/Logo.png",
+        "version": "0.1.0",
+        "description": "Logging of the E.Tutorial app",
+        "name": "davidsichau:logging"
+    },
+    "files": {
+        "collections/log.js": {
+            "name": "collections/log.js",
+            "modules": {},
+            "classes": {
+                "Logging": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Logging": {
+            "name": "Logging",
+            "shortname": "Logging",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "collections/log.js",
+            "line": 7,
+            "description": "The collection for the Logs",
+            "type": "Mongo.Collection"
+        }
+    },
+    "classitems": [
+        {
+            "file": "collections/log.js",
+            "line": 13,
+            "description": "The time of creation",
+            "itemtype": "property",
+            "name": "createdAt",
+            "type": "Date",
+            "required": 1,
+            "default": "The timepoint of the creation",
+            "class": "Logging"
+        },
+        {
+            "file": "collections/log.js",
+            "line": 27,
+            "description": "The anonymous identifier of an user",
+            "itemtype": "property",
+            "name": "userIdentifier",
+            "type": "String",
+            "required": 1,
+            "default": "The SHA256 Hash of the userId",
+            "class": "Logging"
+        },
+        {
+            "file": "collections/log.js",
+            "line": 44,
+            "description": "The actual logged information",
+            "itemtype": "property",
+            "name": "log",
+            "type": "Object",
+            "required": 1,
+            "class": "Logging"
+        },
+        {
+            "file": "collections/log.js",
+            "line": 62,
+            "description": "Method to add a log file",
+            "itemtype": "method",
+            "name": "addLog",
+            "params": [
+                {
+                    "name": "logging",
+                    "description": "The log Object"
+                }
+            ],
+            "class": "Logging"
+        }
+    ],
+    "warnings": []
+}
