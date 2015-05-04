@@ -1,39 +1,37 @@
 Package.describe({
-  name: "davidsichau:sidebar",
-  summary: "Provide a simple sidebar.",
-  version: "0.1.1",
-  git: "https://github.com/DavidSichau/meteor-sidebar"
+  name: "davidsichau:logging",
+  summary: "Logging for E.Tutorial",
+  version: "0.1.0",
+  git: "https://github.com/DavidSichau/meteor-logging"
 });
 
 Package.onUse(function(api) {
   api.versionsFrom("1.0.1");
+  var both = ['client', 'server'];
+
   api.use([
-    "templating",
-    "less",
     "meteor",
     "ddp",
-    "fortawesome:fontawesome@4.3.0"
-  ], 'client');
+    "sha",
+    'livedata',
+    "aldeed:collection2"
+  ], both);
 
 
-  api.addFiles("client/sidebar.html", ["client"]);
-  api.addFiles("client/sidebar.js", ["client"]);
-  api.addFiles("client/sidebar.less", ["client"]);
-
-  api.export("");
+  api.addFiles("collections/log.js", both);
 });
 
 
 
-  
-    
-    
-    Package.onTest(function (api) {
+
+
+
+Package.onTest(function (api) {
   api.use("tinytest");
-  api.use("davidsichau:sidebar");
-  
+  api.use("davidsichau:logging");
+
   api.addFiles("tests/client/index.js", ["client"]);
 
-});    
-  
+});
+
   

@@ -1,25 +1,13 @@
-# davidsichau:sidebar
+# davidsichau:logging
 
-Provide a simple sidebar. 
+Provide a simple logging. 
 
 ## Installation
 
 ```
-    meteor add davidsichau:sidebar
+    meteor add davidsichau:logging
 ```
 
-## Description
+## Dokumentation
 
-Add some more along the lines of *"Provide a simple sidebar."*
-
-
-It provides the helpers for implementing simple sidebars
-
-    {{#sidebarLeft width="400px"}}
-        //your content
-    {{/sidebarLeft}}
-    {{#sidebarRight width="45%"}}
-        //your content
-    {{/sidebarRight}}
-    
-The parameter widht can be used to define the widht of the sidebar
+the dokumentation is available under http://davidsichau.github.io/meteor-logging/
