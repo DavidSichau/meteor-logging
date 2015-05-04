@@ -42,6 +42,15 @@ LogSchemas.Logs = new SimpleSchema({
         }
     },
     /**
+     * The type of the logged event
+     * @property type
+     * @type String
+     * @required
+     */
+    type: {
+        type: String
+    },
+    /**
      * The actual logged information
      * @property log
      * @type Object
@@ -64,8 +73,9 @@ Meteor.methods({
      * @method addLog
      * @param logging The log Object
      */
-    addLog: function(logging) {
+    addLog: function(type, logging) {
+        check(type, String);
         check(logging, Object);
-        Logging.insert({log: logging});
+        Logging.insert({type: type, log: logging});
     }
 });
