@@ -58,6 +58,16 @@
         {
             "file": "collections/log.js",
             "line": 44,
+            "description": "The type of the logged event",
+            "itemtype": "property",
+            "name": "type",
+            "type": "String",
+            "required": 1,
+            "class": "Logging"
+        },
+        {
+            "file": "collections/log.js",
+            "line": 53,
             "description": "The actual logged information",
             "itemtype": "property",
             "name": "log",
@@ -67,7 +77,7 @@
         },
         {
             "file": "collections/log.js",
-            "line": 62,
+            "line": 71,
             "description": "Method to add a log file",
             "itemtype": "method",
             "name": "addLog",
